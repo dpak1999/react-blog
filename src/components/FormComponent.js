@@ -16,7 +16,7 @@ const FormComponent = (props) => {
     e.preventDefault();
     props.onSubmit({
       id: uuidv4(),
-      date: Date.now(),
+      date: Date().toString(),
       title: title,
       author: author,
       category: category,

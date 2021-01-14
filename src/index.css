@@ -19,3 +19,6 @@ code {
   bottom: 38px;
   right: 40px;
 }
+.lnr-icon:hover {
+  cursor: pointer;
+}

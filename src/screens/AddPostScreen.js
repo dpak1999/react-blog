@@ -10,7 +10,7 @@ const AddPostScreen = () => {
     <div>
       <h1 className="text-center my-4">Add a new Post</h1>
       <hr />
-      <div className="border border-primary rounded container p-4">
+      <div className="border border-primary rounded container p-4 mx-auto">
         <FormComponent />
       </div>
       <LinkContainer style={{ padding: "15px", borderRadius: "100%" }} to="/">

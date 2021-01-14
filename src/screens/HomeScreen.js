@@ -1,12 +1,18 @@
 /** @format */
 
 import React from "react";
-import Header from "../components/Header";
+import { Button } from "react-bootstrap";
 
 const HomeScreen = () => {
   return (
     <>
-      <Header />
+      <Button
+        style={{ padding: "15px", borderRadius: "50%" }}
+        variant="dark"
+        className="btn-position"
+      >
+        <i class="lni lni-lg lni-plus"></i>
+      </Button>
     </>
   );
 };

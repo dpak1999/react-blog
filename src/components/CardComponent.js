@@ -31,7 +31,7 @@ const CardComponent = ({ blog }) => {
         <hr />
         <div className="d-flex">
           <span className="ml-2 mb-2">
-            <i class="lni lni-comments mr-1"></i>
+            <i className="lni lni-comments mr-1"></i>
             {item.commentCount}
           </span>
           <div className="ml-auto">

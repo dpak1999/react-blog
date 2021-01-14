@@ -2,17 +2,19 @@
 
 import React from "react";
 import { Button } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 
 const HomeScreen = () => {
   return (
     <>
-      <Button
-        style={{ padding: "15px", borderRadius: "50%" }}
-        variant="dark"
-        className="btn-position"
+      <LinkContainer
+        style={{ padding: "15px", borderRadius: "100%" }}
+        to="/add"
       >
-        <i class="lni lni-lg lni-plus"></i>
-      </Button>
+        <Button variant="primary" className="btn-position">
+          <i class="lni lni-lg lni-plus"></i>
+        </Button>
+      </LinkContainer>
     </>
   );
 };

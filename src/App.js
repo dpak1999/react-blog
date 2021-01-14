@@ -1,9 +1,14 @@
 /** @format */
 
 import { Container } from "react-bootstrap";
+import HomeScreen from "./screens/HomeScreen";
 
 function App() {
-  return <Container>App</Container>;
+  return (
+    <>
+      <HomeScreen />
+    </>
+  );
 }
 
 export default App;

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Form, Button, Col, Container } from "react-bootstrap";
 import { v4 as uuidv4 } from "uuid";
 
-const FormComponent = (props) => {
+const FormComponent = ({ onSubmit }) => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [category, setCategory] = useState("");
@@ -14,7 +14,7 @@ const FormComponent = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.onSubmit({
+    onSubmit({
       id: uuidv4(),
       date: Date().toString(),
       title: title,

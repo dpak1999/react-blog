@@ -22,3 +22,11 @@ code {
 .lnr-icon:hover {
   cursor: pointer;
 }
+
+.heading-title {
+  color: #007bff;
+}
+
+.heading-title:hover {
+  cursor: pointer;
+}

@@ -2,13 +2,16 @@
 
 import React from "react";
 import { Badge, Card, Col, Image } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 
 const CardComponent = ({ blog }) => {
   return blog.map((item) => (
     <Col key={item.id} lg={6} sm={12}>
       <Card style={{ height: "250px" }} className="mt-4">
         <Card.Body>
-          <h3>{item.title}</h3>
+          <LinkContainer to={`/post/${item.id}`}>
+            <h3 className="heading-title">{item.title}</h3>
+          </LinkContainer>
           <Card.Text>
             <Badge pill variant="light">
               <Image

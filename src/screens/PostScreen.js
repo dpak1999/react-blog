@@ -30,17 +30,13 @@ const PostScreen = ({ match }) => {
     <Container>
       <Row>
         <Col lg={12}>
-          <h1 class="mt-4">{blogs.title}</h1>
-          <p class="lead">-{blogs.author}</p>
-
+          <h1 className="mt-4">{blogs.title}</h1>
+          <p className="lead">-{blogs.author}</p>
           <p>{blogs.date}</p>
-
           <hr />
-
           <Image rounded fluid src="https://picsum.photos/1000/400" />
           <hr />
-
-          <p class="lead">{blogs.content}</p>
+          <p className="lead">{blogs.content}</p>
 
           <CommentForm />
 

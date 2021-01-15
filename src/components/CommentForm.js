@@ -1,16 +1,29 @@
 /** @format */
 
-import React from "react";
+import React, { useState } from "react";
 import { Button, Card, Form } from "react-bootstrap";
 
 const CommentForm = () => {
+  const [comment, setComment] = useState("");
+
+  const handleComment = (e) => {
+    e.preventDefault();
+    console.log(comment);
+    setComment("");
+  };
+
   return (
     <Card className="my-4">
       <Card.Header>Leave a comment</Card.Header>
       <Card.Body>
-        <Form>
+        <Form onSubmit={handleComment}>
           <Form.Group>
-            <Form.Control as="textarea" rows={3} />
+            <Form.Control
+              value={comment}
+              onChange={(e) => setComment(e.target.value)}
+              as="textarea"
+              rows={3}
+            />
           </Form.Group>
 
           <Button type="submit" variant="primary">
